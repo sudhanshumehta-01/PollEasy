@@ -1,0 +1,81 @@
+.result-container {
+    width: 700px;
+    margin: 20px auto;
+    font-family: my-font;
+    color: #666;
+}
+
+.poll-question{
+    color: #38bdf8;;
+}
+
+.bar-results {
+    margin: 2em 0;
+}
+
+.bar-row {
+    margin-bottom: 10px;
+}
+
+.bar-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.bar-bg {
+    background: #cfd3d3;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 36px;
+    position: relative;
+}
+
+.bar-fill {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.results {
+    margin-top: 24px;
+}
+
+.result-bar {
+    margin-bottom: 16px;
+}
+
+.distribution{
+    margin: 0;
+}
+
+.pie-results{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.option-color-card {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.option-color {
+  width: 15px;
+  height: 15px;
+}

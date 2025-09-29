@@ -1,0 +1,118 @@
+.vote-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #f5f7fa;
+    font-family: my-font;
+    padding: 1rem;
+}
+
+.vote-card {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 580px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vote-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.vote-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2d3436;
+    margin-bottom: 6px;
+}
+
+.created-by {
+    font-size: 15px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.options-list {
+    margin-bottom: 22px;
+}
+
+.option-item {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-item input {
+    margin-right: 10px;
+}
+
+.option-item:hover {
+    color: #40739e;
+}
+
+.vote-btn {
+    background: #273c75;
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.vote-btn:hover {
+    background: #40739e;
+    transform: translateY(-2px);
+}
+
+.message {
+    background: rgb(207, 241, 207);
+    padding: 0.8em 1em;
+    margin-top: 12px;
+    border-radius: 6px;
+    color: green;
+}
+
+.results {
+    margin-top: 24px;
+}
+
+.result-bar {
+    margin-bottom: 16px;
+}
+
+.bar {
+    background: #cfd3d3;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 36px;
+    position: relative;
+}
+
+.fill {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.total-votes {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #34495e;
+}

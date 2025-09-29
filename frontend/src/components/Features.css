@@ -1,0 +1,42 @@
+.home-features {
+    font-family: my-font;
+}
+
+.home-features h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 2em;
+    color: #4b4d4f;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin: 2em 7em;
+}
+
+.features-grid>div {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.features-grid>div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.features-grid h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #5582e8;
+}
+
+.features-grid p {
+    font-size: 1.1rem;
+    color: #475569;
+}

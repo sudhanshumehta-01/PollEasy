@@ -1,0 +1,70 @@
+.admin-container {
+    padding: 2em 7em;
+    font-family: Arial, sans-serif;
+    background-color: #f3f6f9;
+    min-height: 100vh;
+}
+
+.admin-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #2563eb;
+}
+
+.admin-stats {
+    display: flex;
+    margin: 2rem;
+    
+    justify-content: space-between;
+}
+
+.stat-card {
+    width: 25em;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.chart-box {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    min-width: 280px;
+    margin: 0 2em;
+}
+
+.bar-chart-box-header{
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #555;
+}
+
+.pie-chart-box-header{
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #555;
+}

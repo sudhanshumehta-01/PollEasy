@@ -1,0 +1,222 @@
+.browse-container {
+    padding: 2em 7em;
+    font-family: 'my-font', sans-serif;
+    background-color: #f3f6f9;
+    min-height: 80vh;
+}
+
+.browse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.browse-header h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.browse-header p {
+    color: #475569;
+    margin-top: 0.3em;
+}
+
+.create-btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.create-btn:hover {
+    background-color: #1e4ed8;
+    transform: translateY(-2px);
+}
+
+.search-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2em;
+}
+
+.search-section input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.95rem;
+}
+
+.search-section button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.search-section button:hover {
+    background-color: #1e4ed8;
+    transform: translateY(-1px);
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filters button {
+    padding: 8px 14px;
+    border-radius: 10px;
+    background-color: #e2e8f0;
+    color: #334155;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, transform 0.2s;
+}
+
+.filters button:hover,
+.filters button.active {
+    background-color: #cbd5e1;
+    transform: translateY(-1px);
+}
+
+.polls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 20px;
+}
+
+.poll-card {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.poll-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.poll-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    color: #64748b;
+}
+
+.poll-header .creator {
+    font-weight: 600;
+}
+
+.poll-header .time {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background-color: #f1f5f9;
+}
+
+.poll-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.poll-options {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 2.5em;
+}
+
+.actions button {
+    flex: 1;
+    padding: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #334155;
+    transition: background 0.2s ease-in-out, transform 0.2s;
+}
+
+.actions button:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 2em;
+}
+
+.pagination button {
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out, transform 0.2s;
+}
+
+.pagination button:hover {
+    background-color: #e2e8f0;
+    transform: translateY(-1px);
+}
+
+.pagination button:disabled {
+    background-color: #f1f5f9;
+    cursor: not-allowed;
+    color: #94a3b8;
+}
+
+.pagination .active-page {
+    background-color: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+
+@media (max-width: 900px) {
+    .browse-header button {
+        width: 12em;
+    }
+
+    .create-btn {
+        padding: 10px 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    .browse-header {
+        flex-direction: column;
+    }
+}

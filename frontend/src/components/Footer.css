@@ -1,0 +1,13 @@
+.footer {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #94a3b8;
+}
