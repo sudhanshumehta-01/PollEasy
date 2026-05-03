@@ -9,9 +9,8 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
-mongoose.connect('mongodb://localhost:27017/pollEasy_db').
-    then(() => { console.log("Mongo db connected") }).
-    catch((err) => { console.log("error in connection", err) });
+const PORT = process.env.PORT || 5000;
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/pollEasy_db";
 
 const authRoutes = require("./routes/authRoutes");
 const pollRoutes = require("./routes/pollRoutes");
@@ -23,4 +22,12 @@ app.use("/polls", pollRoutes);
 app.use("/votes", voteRoutes);
 app.use("/admin", adminRoutes);
 
-app.listen(5000, () => { console.log("server started") });
+mongoose.connect(MONGO_URI)
+    .then(() => {
+        console.log("Mongo db connected");
+        app.listen(PORT, () => { console.log(`server started on port ${PORT}`) });
+    })
+    .catch((err) => {
+        console.error("error in connection", err);
+        process.exit(1);
+    });
