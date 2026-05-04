@@ -25,7 +25,7 @@ export default function Register() {
         }
 
         try {
-            const res = await axios.post("http://localhost:5000/auth/registerUser", {
+            const res = await axios.post("https://polleasy-5.onrender.com/auth/registerUser", {
                 name: user.name,
                 email: user.email,
                 password: user.password,

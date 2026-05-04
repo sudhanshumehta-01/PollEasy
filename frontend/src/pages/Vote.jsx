@@ -32,7 +32,7 @@ export default function Vote() {
         try {
             const token = localStorage.getItem("token");
 
-            const voteRes = await axios.post(`http://polleasy-5.onrender.com/votes/vote/${id}`, {
+            const voteRes = await axios.post(`https://polleasy-5.onrender.com/votes/vote/${id}`, {
                 _id: selectedOption,
             }, {
                 headers: {

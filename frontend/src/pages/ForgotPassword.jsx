@@ -9,7 +9,7 @@ export default function ForgotPassword() {
 
     async function handleReset() {
         try {
-            const res = await axios.post("http://localhost:5000/auth/forgot-password", {
+            const res = await axios.post("https://polleasy-5.onrender.com/auth/forgot-password", {
                 email,
             });
             setMessage(res.data.msg || "Check your Gmail for the reset link.");

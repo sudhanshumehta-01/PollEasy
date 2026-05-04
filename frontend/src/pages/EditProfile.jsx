@@ -27,7 +27,7 @@ export default function EditProfile() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.put("http://localhost:5000/auth/updateProfile", {
+            const res = await axios.put("https://polleasy-5.onrender.com/auth/updateProfile", {
                 name,
                 email,
                 ...(password && { password })

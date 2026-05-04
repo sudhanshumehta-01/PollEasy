@@ -18,7 +18,7 @@ export default function Profile() {
 
         const fetchPolls = async () => {
             try {
-                const res = await axios.get("http://localhost:5000/polls/getPolls", {
+                const res = await axios.get("https://polleasy-5.onrender.com/polls/getPolls", {
                     headers: token ? { Authorization: `Bearer ${token}` } : {}
                 });
 

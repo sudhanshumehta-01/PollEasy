@@ -10,7 +10,7 @@ export default function ResetPassword() {
 
     async function handleReset() {
         try {
-            const res = await axios.post(`http://localhost:5000/auth/reset-password/${token}`, {
+            const res = await axios.post(`https://polleasy-5.onrender.com/auth/reset-password/${token}`, {
                 newPassword
             });
             setMessage(res.data.msg);

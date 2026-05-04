@@ -15,7 +15,7 @@ export default function Login() {
     async function handleClick() {
         // console.log("submit page.")
         try {
-            const res = await axios.post("http://localhost:5000/auth/loginUser", {
+            const res = await axios.post("https://polleasy-5.onrender.com/auth/loginUser", {
                 email: user.email,
                 password: user.password,
             });

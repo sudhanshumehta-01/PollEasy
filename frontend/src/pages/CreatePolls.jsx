@@ -49,7 +49,7 @@ export default function CreatePolls() {
 
             const pollData = { question, options, visibility };
 
-            const res = await axios.post("http://localhost:5000/polls/createPoll", pollData, {
+            const res = await axios.post("https://polleasy-5.onrender.com/polls/createPoll", pollData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
