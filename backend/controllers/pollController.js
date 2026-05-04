@@ -24,9 +24,11 @@ exports.createPoll = async (req, res) => {
 exports.getPolls = async (req, res) => {
     try {
         const polls = await Poll.find();
+        console.log("Polls from DB:", polls);
         res.json(polls);
     } catch (err) {
-        console.log(err);
+        console.error("Error fetching polls:", err);
+        res.status(500).json({ message: "Server error" });
     }
 };
 
