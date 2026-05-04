@@ -13,7 +13,7 @@ export default function Vote() {
     useEffect(() => {
         async function fetchPoll() {
             try {
-                const res = await axios.get(`http://localhost:5000/polls/getPollById/${id}`);
+                const res = await axios.get(`https://polleasy-5.onrender.com/polls/getPollById/${id}`);
                 setPoll(res.data);
             } catch (err) {
                 console.error("Error fetching poll:", err);
@@ -42,7 +42,7 @@ export default function Vote() {
 
             setVoted(true);
             setMessage(voteRes.data.msg);
-            const res = await axios.get(`http://localhost:5000/polls/getPollById/${id}`);
+            const res = await axios.get(`https://polleasy-5.onrender.com/polls/getPollById/${id}`);
             setPoll(res.data);
         } catch (err) {
             console.log("Error submitting vote:", err);
