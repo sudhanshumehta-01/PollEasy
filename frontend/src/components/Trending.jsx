@@ -11,7 +11,7 @@ export default function Trending() {
     useEffect(() => {
         async function fetchTrendingPolls() {
             try {
-                const res = await axios.get("http://localhost:5000/polls/getPolls");
+                const res = await axios.get("https://polleasy-5.onrender.com/polls/getPolls");
                 const trending = res.data.filter(poll => {
                     const totalVotes = poll.options.reduce((acc, opt) => acc + opt.votes, 0);
                     return totalVotes >= 1;
