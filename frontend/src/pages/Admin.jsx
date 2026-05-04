@@ -27,7 +27,7 @@ export default function Admin() {
             try {
                 const token = localStorage.getItem("token");
 
-                const res = await axios.get("http://localhost:5000/admin/getAdminStats", {
+                const res = await axios.get("http://polleasy-5.onrender.com/admin/getAdminStats", {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
